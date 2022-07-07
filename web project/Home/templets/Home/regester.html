@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css\bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css\all.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css\style.css'%}"> 
+    <title>Register to MUST</title>
+</head>
+
+<body class="img1">
+    <div class="bg1">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index">Home</a>
+            </li>
+            <img class="img3" src="https://must.edu.eg/wp-content/uploads/2021/09/must-logo.svg" alt="">
+            <li class="nav-item">
+                <a class="nav-link" href="login">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="regester">Register</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container py-5 bg1 mrg">
+
+        <div class="form-group">
+            <label for="Name">Name</label>
+            <input class="form-control" type="text" id="Name">
+        </div>
+
+        <div class="form-group">
+            <label for="LastName">Last Name</label>
+            <input class="form-control" type="text" id="LastName">
+        </div>
+
+        <div class="form-group">
+            <label for="Password">Password</label>
+            <input class="form-control" type="text" id="Password">
+        </div>
+
+        <div class="form-group">
+            <label for="Email">Email</label>
+            <input class="form-control" type="text" id="Email">
+        </div>
+
+        <div class="btn btn-outline-info" onclick="Register()">Register</div>
+    </div>
+
+</body>
+
+</html>
